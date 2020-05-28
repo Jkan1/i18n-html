@@ -15,11 +15,12 @@ var LANGUAGE = {
         "Please select language to vote -":"Bitte wählen Sie die Sprache zur Abstimmung aus -"
     }
 }
-var languages = Array.from(document.getElementsByClassName("language"));
-
+var languages = Array.from(document.getElementsByClassName("img-s"));
+console.log(LANGUAGE["fr"]);
 languages.forEach(function (item, index) {
     item.addEventListener('click', function () {
-        changeSystemLanguage(LANGUAGE[this.dataset.lang]);
+       changeSystemLanguage(LANGUAGE[this.dataset.lang]);
+        
     });
 });
 
