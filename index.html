@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>i18n Document</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="./js/main.js" defer="true"></script>
+    <title>Internationalization Document</title>
 </head>
+
 <body>
-    
+
+    <h1 data-langkey="Welcome to Internationalization Example">Welcome to Internationalization Example</h1>
+
+    <div class="languages">
+        <img src="./assets/en.png" alt="English" class="language" data-lang="en">
+        <img src="./assets/fr.png" alt="French" class="language" data-lang="fr">
+        <img src="./assets/du.jpg" alt="German" class="language" data-lang="du">
+    </div>
+
+    <fieldset>
+        <legend>
+            <span data-langkey="Language Preference">Language Preference</span>
+        </legend>
+        <span data-langKey="Please select language to vote -">Please select language to vote -</span>
+        <div class="radio-buttons">
+            <input type="radio" name="lang" id="en" value="English">
+            <input type="radio" name="lang" id="fr" value="French">
+            <input type="radio" name="lang" id="du" value="German">
+        </div>
+    </fieldset>
+
 </body>
+
 </html>
