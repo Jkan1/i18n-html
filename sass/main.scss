@@ -1,13 +1,12 @@
 
-.languages {
-    position: right;
-    display: inline;
-    background: black;
-    height: 50px;
-    width: 100px;
+.flags {
+    position: absolute;
+    right:15px;
+    top:10px;
+    background-color:black;
 }
-img.language {
-    position: right;
+    
+.img-s {
     height: 10px;
     width: 30px;
 }
